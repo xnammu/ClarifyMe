@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #121417;
+  --color-panel: #1a1d22;
+  --color-panel-raised: #21252c;
+  --color-border: #2b303a;
+  --color-text: #edeff2;
+  --color-text-muted: #8d95a3;
+  --color-accent: #46e0c9;
+  --color-accent-soft: rgba(70, 224, 201, 0.14);
+  --color-warn: #e7a93d;
+  --color-danger: #e2665c;
+
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+@keyframes scanmark-sweep {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(var(--sweep-size, 28px));
+  }
+}
+
+.scanmark-sweep {
+  animation: scanmark-sweep 2.2s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scanmark-sweep {
+    animation: none;
+  }
+}

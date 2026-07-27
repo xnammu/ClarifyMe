@@ -1,0 +1,10 @@
+**/node_modules
+**/.next
+**/__pycache__
+**/*.pyc
+backend/storage/uploads/*
+backend/storage/outputs/*
+!backend/storage/uploads/.gitkeep
+!backend/storage/outputs/.gitkeep
+frontend/.env.local
+.git
