@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="./frontend/public/clarifyme.gif" alt="logo" width="8%" height="8%"/>
-
 # ClarifyMe
 
 ### Unified Image Restoration Platform
